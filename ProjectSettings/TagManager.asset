@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Submarine
+  - Log
+  - Ridge1
   layers:
   - Default
   - TransparentFX
