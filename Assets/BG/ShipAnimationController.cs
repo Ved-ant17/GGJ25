@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ShipAnimationController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ShipAnimationController : MonoBehaviour
     public float freezeTime = 2f;  // Time in seconds to freeze animation
 
     private bool animationFrozen = false;
-
+    [SerializeField] private GameObject woodenLog;
     void Update()
     {
         // Check if the background has reached the freeze point
@@ -17,6 +18,12 @@ public class ShipAnimationController : MonoBehaviour
         {
             FreezeAnimation();
             animationFrozen = true;
+        }
+
+        if (bgTransform.position.y <= bgFreezePoint + 10f)
+        {
+
+            StartCoroutine(DisableLog());
         }
     }
 
@@ -27,5 +34,11 @@ public class ShipAnimationController : MonoBehaviour
 
         // Pause the Animator
         shipAnimator.speed = 0f;
+    }
+
+    public IEnumerator DisableLog()
+    {
+        woodenLog.SetActive(false);
+        yield return new WaitForSeconds(0f);
     }
 }

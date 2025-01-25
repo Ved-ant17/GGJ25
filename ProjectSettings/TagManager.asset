@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Submarine
-  - PlayerBubble
+  - Log
+  - Ridge1
   layers:
   - Default
   - TransparentFX
