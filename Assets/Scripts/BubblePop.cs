@@ -8,7 +8,6 @@ public class BubblePop : MonoBehaviour
     public AudioClip popSound;  // Sound effect for the pop
 
     [Header("Game Over Settings")]
-    public string logTag = "Log"; // Tag for the log object
     public string submarineTag = "Submarine"; // Tag for the submarine object
 
     private AudioSource audioSource;
@@ -49,13 +48,6 @@ public class BubblePop : MonoBehaviour
             Destroy(gameObject);
             GameOver();
         }
-
-        // If bubble collides with the log
-        if (collision.gameObject.CompareTag(logTag))
-        {
-            Debug.Log("Game Over! Bubble hit the log.");
-            GameOver();
-        }
     }
 
     private void GameOver()
@@ -64,7 +56,8 @@ public class BubblePop : MonoBehaviour
         Debug.Log("Game Over Triggered!");
 
         // Example: Restart the scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Assets/Scenes/GameOver.unity");
 
         // Alternatively, you can pause the game and display a UI
         // Time.timeScale = 0f;

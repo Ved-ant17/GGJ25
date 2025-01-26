@@ -7,6 +7,7 @@ TagManager:
   - Submarine
   - Log
   - Ridge1
+  - Bubble
   layers:
   - Default
   - TransparentFX
