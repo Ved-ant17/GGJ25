@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea331caaf772ae046af5b4472185e98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  submarine: {fileID: 8989000760886672896}
   moveSpeed: -2
   wobbleAmplitude: 0.5
   wobbleFrequency: 2

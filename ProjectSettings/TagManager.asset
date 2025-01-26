@@ -8,6 +8,8 @@ TagManager:
   - Log
   - Ridge1
   - Bubble
+  - final
+  - GameMusic
   layers:
   - Default
   - TransparentFX

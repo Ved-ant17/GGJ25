@@ -28,7 +28,6 @@ public class BubbleFromMouth : MonoBehaviour
 
     void TriggerBubbleAnimation()
     {
-       
         // Show the bubble (enable it)
         bubble.SetActive(true);
 

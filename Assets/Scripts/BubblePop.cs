@@ -48,6 +48,27 @@ public class BubblePop : MonoBehaviour
             Destroy(gameObject);
             GameOver();
         }
+        if (collision.gameObject.CompareTag("final")){
+            Debug.Log("Bubble popped!");
+
+            // Play pop effect
+            if (popEffect != null)
+            {
+                Instantiate(popEffect, transform.position, Quaternion.identity);
+            }
+
+            // Play sound effect
+            if (popSound != null && audioSource != null)
+            {
+                audioSource.Play();
+            }
+
+
+
+            // Destroy the bubble
+            Destroy(gameObject);
+            SceneManager.LoadScene("Assets/Scenes/GameWin.unity");
+        }
     }
 
     private void GameOver()

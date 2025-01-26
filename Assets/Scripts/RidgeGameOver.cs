@@ -8,19 +8,19 @@ public class RidgeGameOver : MonoBehaviour
     public string mainMenuSceneName = "MainMenu"; // Name of your main menu scene
     public GameObject gameOverUI;      // Reference to the Game Over UI
 
-    // private void Start()
-    // {
-    //     // Ensure the Game Over UI is hidden at the start
-    //     if (gameOverUI != null)
-    //     {
-    //         gameOverUI.SetActive(false);
-    //     }
-    // }
+    private void Start()
+    {
+        // Ensure the Game Over UI is hidden at the start
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(false);
+        }
+    }
 
-    private void OnCollisionEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D sujal)
     {
         // Check if the colliding object has the bubble tag
-        if (other.CompareTag(bubbleTag))
+        if (sujal.gameObject.tag == "Bubble")
         {
             // Trigger Game Over
             GameOver();
@@ -34,15 +34,15 @@ public class RidgeGameOver : MonoBehaviour
         Debug.Log("Game Over! The bubble touched the rig.");
         
         // Show the Game Over UI if it's assigned
-        // if (gameOverUI != null)
-        // {
-        //     gameOverUI.SetActive(true);
-        // }
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(true);
+        }
 
 
         // // Load the Main Menu scene after a short delay
     
-        //     StartCoroutine(LoadMainMenu());
+            StartCoroutine(LoadMainMenu());
         // // Optionally stop the game
     }
 
