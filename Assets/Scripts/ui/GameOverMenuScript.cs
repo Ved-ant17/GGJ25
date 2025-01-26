@@ -15,4 +15,9 @@ public class GameOverMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("FrontScreen");
     }
+
+        public void loadGame()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }

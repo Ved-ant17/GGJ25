@@ -5169,7 +5169,7 @@ GameObject:
   - component: {fileID: 200648576}
   m_Layer: 0
   m_Name: cave_2
-  m_TagString: Ridge1
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5201,7 +5201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b9a3cb31c6eec428ad899040e65687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubbleTag: Player
+  bubbleTag: Bubble
+  mainMenuSceneName: MainMenu
   gameOverUI: {fileID: 0}
 --- !u!50 &200648577
 Rigidbody2D:
@@ -5529,7 +5530,7 @@ GameObject:
   - component: {fileID: 381895466}
   m_Layer: 0
   m_Name: logg1_0
-  m_TagString: Log
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5682,7 +5683,7 @@ GameObject:
   - component: {fileID: 417520989}
   m_Layer: 0
   m_Name: cave_1
-  m_TagString: Untagged
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5794,8 +5795,24 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.53, y: 0}
-  - {x: 0.5300001, y: 0}
+  - {x: -0.33595276, y: 2.350618}
+  - {x: 0.012402296, y: 1.8030027}
+  - {x: -0.21221156, y: 1.4774139}
+  - {x: -0.26409692, y: 0.8653154}
+  - {x: -0.39066422, y: 0.71096003}
+  - {x: -0.31793144, y: 0.45061806}
+  - {x: -0.17289017, y: 0.071110636}
+  - {x: -0.18329802, y: -0.64427936}
+  - {x: -0.3847483, y: -0.9448897}
+  - {x: -0.4544469, y: -1.1462466}
+  - {x: -0.43828005, y: -1.3915188}
+  - {x: -0.41818255, y: -1.6964242}
+  - {x: -0.26777023, y: -1.9109002}
+  - {x: -0.2493765, y: -2.044937}
+  - {x: -0.35127088, y: -2.1975365}
+  - {x: -0.3283299, y: -2.4796028}
+  - {x: 0.12229703, y: -2.8663802}
+  - {x: 0.5052006, y: -3.5155003}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6370,7 +6387,7 @@ GameObject:
   - component: {fileID: 929563733}
   m_Layer: 0
   m_Name: cave_3
-  m_TagString: Untagged
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6485,6 +6502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleTag: Player
+  mainMenuSceneName: MainMenu
   gameOverUI: {fileID: 0}
 --- !u!68 &929563734
 EdgeCollider2D:
@@ -6813,6 +6831,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1205828173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205828174}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205828174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205828173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.3565636, y: 21.655107, z: 0.210642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229076972
 GameObject:
   m_ObjectHideFlags: 0
@@ -6828,7 +6877,7 @@ GameObject:
   - component: {fileID: 1229076975}
   m_Layer: 0
   m_Name: cave_0
-  m_TagString: Untagged
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6916,6 +6965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleTag: Player
+  mainMenuSceneName: MainMenu
   gameOverUI: {fileID: 0}
 --- !u!50 &1229076976
 Rigidbody2D:
@@ -6926,7 +6976,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229076972}
   m_BodyType: 2
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -7217,7 +7267,7 @@ GameObject:
   - component: {fileID: 1580233741}
   m_Layer: 0
   m_Name: 2d bubble_0
-  m_TagString: Player
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7230,14 +7280,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580233734}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -7247,7 +7297,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!212 &1580233736
 SpriteRenderer:
@@ -7387,7 +7437,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -7407,7 +7457,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popEffect: {fileID: 34172814}
   popSound: {fileID: 8300000, guid: b3673dbf32c2af544b63ecc305b7acf9, type: 3}
-  logTag: Log
   submarineTag: Submarine
 --- !u!4 &1924420924 stripped
 Transform:
@@ -7501,9 +7550,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2040186809}
   - component: {fileID: 2040186808}
+  - component: {fileID: 2040186811}
+  - component: {fileID: 2040186810}
+  - component: {fileID: 2040186812}
   m_Layer: 0
   m_Name: bridge
-  m_TagString: Untagged
+  m_TagString: Submarine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7572,12 +7624,144 @@ Transform:
   m_GameObject: {fileID: 2040186807}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.146, y: -3.22, z: 0}
+  m_LocalPosition: {x: 0.125, y: -3.22, z: 0}
   m_LocalScale: {x: 0.8721307, y: 0.8721307, z: 0.8721307}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2074323175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &2040186810
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040186807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.73623455, y: -0.23340344}
+  - {x: -0.5701071, y: -0.029475644}
+  - {x: -0.3035716, y: -0.04740238}
+  - {x: -0.2422123, y: 0.0059856027}
+  - {x: -0.2634766, y: 0.07532299}
+  - {x: -0.49625227, y: 0.051507846}
+  - {x: -0.26496577, y: 0.17138758}
+  - {x: -0.18024197, y: 0.10982989}
+  - {x: -0.13536352, y: 0.2503273}
+  - {x: -0.24490076, y: 0.28329483}
+  - {x: -0.4659895, y: 0.28955802}
+  - {x: -0.795837, y: 0.27218038}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &2040186811
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040186807}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &2040186812
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040186807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.67236346, y: 0.25511104}
+  - {x: 0.486391, y: 0.26459023}
+  - {x: 0.10847597, y: 0.2841947}
+  - {x: 0.0020270534, y: 0.20541188}
+  - {x: 0.05835753, y: 0.1057456}
+  - {x: -0.092002615, y: -0.08877602}
+  - {x: -0.070715606, y: -0.18954591}
+  - {x: -0.01689151, y: -0.20046538}
+  - {x: 0.06857918, y: -0.022818085}
+  - {x: 0.45119452, y: -0.030949667}
+  - {x: 0.58087564, y: -0.17858067}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2074323172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7609,7 +7793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657d4fa2e749930489080baab8588a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -2.5
+  scrollSpeed: -5
   stopAtY: -62.9
 --- !u!212 &2074323174
 SpriteRenderer:
@@ -7863,3 +8047,4 @@ SceneRoots:
   - {fileID: 799357639}
   - {fileID: 333663891}
   - {fileID: 843473800}
+  - {fileID: 1205828174}
